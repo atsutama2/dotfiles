@@ -15,5 +15,12 @@ git config --global alias.br branch
 git config --global alias.ci commit
 git config --global alias.st status
 
-git remote set-url origin git@github.com:atsutama2/dotfiles.git
+#git remote set-url origin git@github.com:atsutama2/dotfiles.git
 #git remote set-url origin git@atsutama:atsutama2/dotfiles.git
+
+# git-prompt / git-completion
+mkdir ~/.zsh
+cd ~/.zsh
+curl -o git-prompt.sh https://raw.githubusercontent.com/git/git/master/contrib/completion/git-prompt.sh
+curl -o git-completion.bash https://raw.githubusercontent.com/git/git/master/contrib/completion/git-completion.bash
+curl -o _git https://raw.githubusercontent.com/git/git/master/contrib/completion/git-completion.zsh
