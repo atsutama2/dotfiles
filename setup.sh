@@ -1,7 +1,8 @@
 #!/bin/zsh
 
-./mac_defaults.sh
+./mac-defaults.sh
 ./homebrew.sh
+./install-vscode-extensions.sh
 
 # シンボリックリンク
 DOT_FILES=(.vimrc .zshrc .zprofile)
