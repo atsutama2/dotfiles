@@ -1,2 +1,2 @@
 # dotfiles
-設定ファイル
+private dotfiles for mac
