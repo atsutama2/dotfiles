@@ -11,4 +11,6 @@ Execute following commands:
 ```
 $ git clone https://github.com/atsutama2/dotfiles.git
 $ cd ~/dotfiles
+./defaults.sh
+./setup.sh
 ```
