@@ -1,5 +1,8 @@
 #!/bin/zsh
 
+./mac_defaults.sh
+./homebrew.sh
+
 # シンボリックリンク
 DOT_FILES=(.vimrc .zshrc .zprofile)
 for file in ${DOT_FILES[@]}
