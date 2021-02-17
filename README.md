@@ -1,2 +1,14 @@
 # dotfiles
-設定ファイル
+private dotfiles for mac
+
+## Preparation
+Execute following command for installing `homebrew`:
+
+https://brew.sh/index_ja
+
+## Install
+Execute following commands:
+```
+$ git clone https://github.com/atsutama2/dotfiles.git
+$ cd ~/dotfiles
+```
