@@ -3,3 +3,4 @@ private dotfiles for mac
 
 ## Preparation
 Execute following command for installing `homebrew`:
+https://brew.sh/index_ja
