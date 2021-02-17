@@ -1,5 +1,5 @@
 "-------------------------------------------------------
-" .vimrc auther: yuya fujita <yuyafujita.eng@mail.com> -
+" .vimrc auther: atsutama2
 "-------------------------------------------------------
 " deinがインストールされるディレクトリの指定
 let s:dein_dir = expand('~/.cache/dein') "<- dein によってプラグインがインストールされるディレクトリ ##########
