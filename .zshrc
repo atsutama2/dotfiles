@@ -1,5 +1,5 @@
 ###############################################################
-# .zshrc auther: yuya fujita <yuyafujita.eng@mail.com>        #
+# .zshrc auther: atsutama2
 ###############################################################
 
 PROMPT='%F{green}%m@%n%f %F{cyan}%~%f$ '
