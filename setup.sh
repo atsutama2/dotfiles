@@ -15,5 +15,5 @@ git config --global alias.br branch
 git config --global alias.ci commit
 git config --global alias.st status
 
-#git remote set-url origin git@github.com:atsutama2/dotfiles.git
-git remote set-url origin git@atsutama:atsutama2/dotfiles.git
+git remote set-url origin git@github.com:atsutama2/dotfiles.git
+#git remote set-url origin git@atsutama:atsutama2/dotfiles.git
