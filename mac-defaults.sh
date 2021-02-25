@@ -89,8 +89,8 @@ killall Finder
 ############################## Dock ##############################
 
 # Dockへ起動中のアプリのみ表示
-printf "Dock - Display only apps running in the Dock\n"
-defaults write com.apple.dock static-only -boolean true
+# printf "Dock - Display only apps running in the Dock\n"
+# defaults write com.apple.dock static-only -boolean true
 
 # 起動中のアプリケーションをアニメーション非表示
 printf "Dock - Disable animation when starting application\n"
