@@ -5,6 +5,9 @@
 
 # Visual Studio Code : Package list
 pkglist=(
+kasik96.swift
+vknabel.vscode-apple-swift-format
+yzhang.markdown-all-in-one
 akamud.vscode-theme-onedark
 andyyaldoo.vscode-json
 CoenraadS.bracket-pair-colorizer

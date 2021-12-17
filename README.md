@@ -18,5 +18,17 @@ $ cd ~/dotfiles
 ./setup.sh
 ```
 
-## Font
-Size: Ricty Regular 20
+## Mac Font
+- Size: Ricty Regular 20
+
+## Terminal
+- Setting tab shortcuts
+  - システム環境設定→キーボード→ショートカット
+  - アプリケーション→ターミナル.app
+  - 次のタブを表示： command + 右Key
+  - 前のタブを表示： command + 左Key
+
+## VSCode
+- Setting
+  - font: Ricty
+  - Size: 18
