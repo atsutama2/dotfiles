@@ -30,5 +30,6 @@ cask "qlstephen"
 cask "quicklook-json"
 cask "provisionql"
 cask "google-japanese-ime"
+cask "zoom"
 mas "Alfred", id: 405843582
 mas "Translate Tab", id: 458887729
