@@ -29,6 +29,6 @@ $ cd ~/dotfiles
   - 前のタブを表示： command + 左Key
 
 ## VSCode
-- Setting
-  - font: Ricty
-  - Size: 18
+- Setting file
+  - `/Users/[UserName]/Library/Application\ Support/Code/User/ `
+  - vscode_settings.json → setting.json
