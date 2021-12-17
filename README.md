@@ -3,6 +3,7 @@ private dotfiles for mac
 
 ## Preparation
 Execute following command for installing `homebrew`:
+HomeBrew：https://brew.sh/index_ja
 
 ```
 xcode-select --install

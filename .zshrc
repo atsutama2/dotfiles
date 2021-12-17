@@ -8,6 +8,10 @@ setopt PROMPT_SUBST ; PS1='%F{green}%n@%m%f: %F{cyan}%~%f %F{red}$(__git_ps1 "(%
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && . "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+# rbenv
+#[[ -d ~/.rbenv  ]] && \
+#  export PATH=${HOME}/.rbenv/bin:${PATH} && \
+#  eval "$(rbenv init -)"
 
 # プロンプト複数起動時のhistory共有
 setopt share_history
