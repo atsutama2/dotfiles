@@ -17,3 +17,6 @@ $ git clone https://github.com/atsutama2/dotfiles.git
 $ cd ~/dotfiles
 ./setup.sh
 ```
+
+## Font
+Size: Ricty Regular 20
