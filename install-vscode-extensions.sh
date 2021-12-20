@@ -5,6 +5,7 @@
 
 # Visual Studio Code : Package list
 pkglist=(
+romanpeshkov.vscode-text-tables
 kasik96.swift
 vknabel.vscode-apple-swift-format
 yzhang.markdown-all-in-one
