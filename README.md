@@ -32,3 +32,10 @@ $ cd ~/dotfiles
 - Setting file
   - `/Users/[UserName]/Library/Application\ Support/Code/User/ `
   - vscode_settings.json → setting.json
+- ショートカット
+  - 参照へ移動
+    - ctrl + r
+  - 定義へ移動
+    - ctrl + ]
+  - 前に戻る
+    - ctrl + [
