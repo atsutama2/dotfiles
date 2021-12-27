@@ -5,6 +5,7 @@
 
 # Visual Studio Code : Package list
 pkglist=(
+ms-azuretools.vscode-docker
 romanpeshkov.vscode-text-tables
 kasik96.swift
 vknabel.vscode-apple-swift-format
