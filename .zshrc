@@ -87,6 +87,8 @@ compinit -u
 alias rm='rm -i'
 alias v="/usr/bin/vim"
 alias gg='git grep'
+alias k='kubectl'
+alias d='docker'
 
 # C#
 alias dotnetnew='dotnet new console' # dotonet run
