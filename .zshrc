@@ -26,6 +26,15 @@ setopt correct
 # Command補完
 autoload -Uz compinit && compinit
 
+# Rust
+[ -s "$HOME/.cargo/env" ] && . "$HOME/.cargo/env"
+
+# anyenv
+eval "$(anyenv init -)"
+
+#direnv
+eval "$(direnv hook zsh)"
+
 # ----------------------------------------------------------------------------------------
 # zsh-completions(補完機能)の設定
 # ----------------------------------------------------------------------------------------
@@ -71,8 +80,15 @@ unset __conda_setup
 alias ll="ls -laF"
 alias v="/usr/local/bin/vim"   # vim
 alias his="history -Di | grep" # 引数でhistoryのgrepを行う
-alias history="history -Di"
+alias his="history -Di"
+alias gcl="gcloud" #gcloud CLI
 
+# rust
+alias c="cargo"
+
+# kubectl
+alias k='kubectl'
+[[ /usr/local/bin/kubectl ]] && source <(kubectl completion zsh)
 
 # ----------------------------------------------------------------------------------------
 # zsh-completions(補完機能)の設定
