@@ -29,9 +29,7 @@ if dein#load_state(s:dein_dir)
     call dein#add('nathanaelkane/vim-indent-guides')                    " インデントを可視化
     call dein#add('sheerun/vim-polyglot')                               " 各種プログラミング言語やファイル形式に対応
     call dein#add('justmao945/vim-clang')                               " C++用補完
-    call dein#add('prabirshrestha/vim-lsp')                             " IDEのような機能を作成するためのプロトコル
-    call dein#add('mattn/vim-lsp-settings')                             " Language Serverのインストールからvim-lspの設定までほとんどを行ってくれる便利なプラグイン
-    call dein#add('mattn/vim-goimports')                                " 
+    "call dein#add('typescript-vim')                                     " TypeScripts
     " call dein#add('')                                                 "
 
     " 設定の終了

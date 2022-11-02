@@ -4,6 +4,9 @@
 
 setopt PROMPT_SUBST ; PS1='%F{green}%n@%m%f: %F{cyan}%~%f %F{red}$(__git_ps1 "(%s)")%f\$ '
 export PATH="/usr/local/sbin:$PATH"
+USE_GKE_GCLOUD_AUTH_PLUGIN=True
+#export GOPATH=$HOME/go
+#PATH=$PATH:$GOPATH/bin
 #PROMPT='%F{green}%m@%n%f %F{cyan}%~%f$ '
 
 export NVM_DIR="$HOME/.nvm"
@@ -83,11 +86,15 @@ alias his="history -Di | grep" # 引数でhistoryのgrepを行う
 alias his="history -Di"
 alias gcl="gcloud" #gcloud CLI
 
+# git
+alias gcpa="git cherry-pick --abort"
+
 # rust
 alias c="cargo"
 
 # kubectl
 alias k='kubectl'
+alias mk='minikube'
 [[ /usr/local/bin/kubectl ]] && source <(kubectl completion zsh)
 
 # ----------------------------------------------------------------------------------------
@@ -100,6 +107,7 @@ autoload -U compinit
 compinit -u
 
 
+# Base
 alias rm='rm -i'
 alias v="/usr/bin/vim"
 alias gg='git grep'
@@ -108,3 +116,4 @@ alias d='docker'
 
 # C#
 alias dotnetnew='dotnet new console' # dotonet run
+eval "$(rbenv init -)"
