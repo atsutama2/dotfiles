@@ -1,50 +1,54 @@
 "-------------------------------------------------------
 " .vimrc auther: atsutama2
 "-------------------------------------------------------
-" deinがインストールされるディレクトリの指定
-let s:dein_dir = expand('~/.cache/dein') "<- dein によってプラグインがインストールされるディレクトリ ##########
+let s:dein_dir = expand('~/.cache/dein')
 let s:dein_repo_dir = s:dein_dir . '/repos/github.com/Shougo/dein.vim'
 
-" deinがインストールされているかをチェック インストールされていなかったらdeinをダウンロードしてくる
 if &runtimepath !~# '/dein.vim'
-   if !isdirectory(s:dein_repo_dir)
-   execute '!git clone https://github.com/Shougo/dein.vim' s:dein_repo_dir
-   endif
-   execute 'set runtimepath^=' . fnamemodify(s:dein_repo_dir, ':p')
+  if !isdirectory(s:dein_repo_dir)
+    execute '!git clone https://github.com/Shougo/dein.vim' s:dein_repo_dir
+  endif
+  execute 'set runtimepath^=' . fnamemodify(s:dein_repo_dir, ':p')
 endif
 
-" deinの起動
 if dein#load_state(s:dein_dir)
-    call dein#begin(s:dein_dir)
+  call dein#begin(s:dein_dir)
 
-    call dein#add('$HOME/.cache/dein/repos/github.com/Shougo/dein.vim') " プラグインマネージャー
-    call dein#add('Shougo/neocomplete')                                 " 補完プラグイン
-    call dein#add('Shougo/neosnippet.vim')                              " スニペット補完プラグイン 
-    call dein#add('Shougo/neosnippet-snippets')                         " 各種スニペット
-    call dein#add('itchyny/lightline.vim.git')                          " ステータスラインをリッチにする
-    call dein#add('airblade/vim-gitgutter')                             " 変更箇所を左端に表示する
-    call dein#add('altercation/vim-colors-solarized')                   " カラースキーム設定
-    call dein#add('osyo-manga/vim-anzu.git')                            " 検索時にマッチした個数とそれが何番目であるかの情報を表示
-    call dein#add('vim-scripts/yanktmp.vim')                            " 別プロセスのvim同士でコピーペースト
-    call dein#add('nathanaelkane/vim-indent-guides')                    " インデントを可視化
-    call dein#add('sheerun/vim-polyglot')                               " 各種プログラミング言語やファイル形式に対応
-    call dein#add('justmao945/vim-clang')                               " C++用補完
-    "call dein#add('typescript-vim')                                     " TypeScripts
-    " call dein#add('')                                                 "
+  call dein#add('$HOME/.cache/dein/repos/github.com/Shougo/dein.vim') " プラグインマネージャー
+  call dein#add('Shougo/neocomplete')                                 " 補完プラグイン
+  call dein#add('Shougo/neosnippet.vim')                              " スニペット補完プラグイン 
+  call dein#add('Shougo/neosnippet-snippets')                         " 各種スニペット
+  call dein#add('itchyny/lightline.vim.git')                          " ステータスラインをリッチにする
+  call dein#add('airblade/vim-gitgutter')                             " 変更箇所を左端に表示する
+  call dein#add('altercation/vim-colors-solarized')                   " カラースキーム設定
+  call dein#add('osyo-manga/vim-anzu.git')                            " 検索時にマッチした個数とそれが何番目であるかの情報を表示
+  call dein#add('vim-scripts/yanktmp.vim')                            " 別プロセスのvim同士でコピーペースト
+  call dein#add('nathanaelkane/vim-indent-guides')                    " インデントを可視化
+  call dein#add('sheerun/vim-polyglot')                               " 各種プログラミング言語やファイル形式に対応
+  call dein#add('justmao945/vim-clang')                               " C++用補完
+  " call dein#add('')                                                 "
 
-    " 設定の終了
-    call dein#end()
-    call dein#save_state()
+  let s:rc_dir = expand('~/.vim')
+  if !isdirectory(s:rc_dir)
+    call mkdir(s:rc_dir, 'p')
+  endif
+  let s:toml = s:rc_dir . '/dein.toml'
+
+  call dein#load_toml(s:toml, {'lazy': 0})
+
+  call dein#end()
+  call dein#save_state()
 endif
 
-" プラグインのインストールをチェック 未インストールのプラグインがあればインストールする
 if dein#check_install()
-    call dein#install()
+  call dein#install()
 endif
 
-filetype plugin indent on
-filetype indent on
-syntax on
+let s:removed_plugins = dein#check_clean()
+if len(s:removed_plugins) > 0
+  call map(s:removed_plugins, "delete(v:val, 'rf')")
+  call dein#recache_runtimepath()
+endif
 
 
 "-------------------------------------------------------
@@ -247,6 +251,10 @@ nmap <silent> <C-g><C-p> <Plug>GitGutterPrevHunk
 "-------------------------------------------------------
 " 詳細設定 
 "-------------------------------------------------------
+filetype plugin indent on
+filetype indent on
+syntax on
+
 let g:neocomplete_php_locale = 'ja'
 let g:Powerline_symbols = 'fancy'
 let g:gitgutter_max_signs = 5000
@@ -278,6 +286,7 @@ set showmatch      " 対応する括弧を強調表示
 set helpheight=999 " ヘルプを画面いっぱいに開く
 set nocursorline   " カーソル行を強調表示しない
 set ambiwidth=double " □や○文字が崩れる問題を解決
+set clipboard=unnamed
 
 " カーソル移動関連の設定
 set backspace=indent,eol,start " Backspaceキーの影響範囲に制限を設けない

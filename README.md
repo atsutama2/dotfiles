@@ -25,6 +25,10 @@ $ cd ~/dotfiles
 ```
 ln -sf ~/dotfiles/.vimrc ~/.config/nvim/init.vim
 ln -sf ~/dotfiles/colors ~/.config/nvim
+ln -sf ~/dotfiles/.vim/dein.toml ~/.vim/dein.toml
+
+pip3 install --user pynvim
+pip3 install --user neovim
 ```
 
 ## Terminal

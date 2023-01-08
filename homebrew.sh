@@ -9,6 +9,3 @@ printf "Installation of homebrew package\n"
 sudo chown -R $(whoami) $(brew --prefix)/*
 brew bundle
 
-# Backup
-#brew bundle dump
-

@@ -52,11 +52,22 @@ GIT_PS1_SHOWUNTRACKEDFILES=true
 GIT_PS1_SHOWSTASHSTATE=true
 GIT_PS1_SHOWUPSTREAM=auto
 
+
+# ----------------------------------------------------------------------------------------
+# zsh-completions(補完機能)の設定
+# ----------------------------------------------------------------------------------------
+if [ -e /usr/local/share/zsh-completions ]; then
+    fpath=(/usr/local/share/zsh-completions $fpath)
+fi
+autoload -U compinit
+compinit -u
+
+
 # ----------------------------------------------------------------------------------------
 # alias設定
 # ----------------------------------------------------------------------------------------
 alias ll="ls -laF"
-alias v="/usr/local/bin/nvim"   # vim
+alias v="/usr/local/bin/vim"
 alias his="history -Di | grep" # 引数でhistoryのgrepを行う
 alias his="history -Di"
 alias gcl="gcloud" #gcloud CLI
@@ -71,15 +82,6 @@ alias c="cargo"
 alias k='kubectl'
 alias mk='minikube'
 [[ /usr/local/bin/kubectl ]] && source <(kubectl completion zsh)
-
-# ----------------------------------------------------------------------------------------
-# zsh-completions(補完機能)の設定
-# ----------------------------------------------------------------------------------------
-if [ -e /usr/local/share/zsh-completions ]; then
-    fpath=(/usr/local/share/zsh-completions $fpath)
-fi
-autoload -U compinit
-compinit -u
 
 # Base
 alias rm='rm -i'
