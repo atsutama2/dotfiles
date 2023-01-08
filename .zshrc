@@ -5,17 +5,14 @@
 setopt PROMPT_SUBST ; PS1='%F{green}%n@%m%f: %F{cyan}%~%f %F{red}$(__git_ps1 "(%s)")%f\$ '
 export PATH="/usr/local/sbin:$PATH"
 USE_GKE_GCLOUD_AUTH_PLUGIN=True
-#export GOPATH=$HOME/go
+
 #PATH=$PATH:$GOPATH/bin
-#PROMPT='%F{green}%m@%n%f %F{cyan}%~%f$ '
+export GOPATH=$HOME/go
+export PATH=$PATH:$GOPATH/bin
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && . "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
-# rbenv
-#[[ -d ~/.rbenv  ]] && \
-#  export PATH=${HOME}/.rbenv/bin:${PATH} && \
-#  eval "$(rbenv init -)"
 
 # プロンプト複数起動時のhistory共有
 setopt share_history
@@ -54,34 +51,12 @@ GIT_PS1_SHOWDIRTYSTATE=true
 GIT_PS1_SHOWUNTRACKEDFILES=true
 GIT_PS1_SHOWSTASHSTATE=true
 GIT_PS1_SHOWUPSTREAM=auto
-# 現在のブランチがupstreamより進んでいるとき">"を、遅れているとき"<"を、遅れてるけど独自の変更もあるとき"<>"を表示する
-# addされてない新規ファイルがある(untracked)とき"%"を表示する
-# stashになにか入っている(stashed)とき"$"を表示する
-# addされてない変更(unstaged)があったとき"*"を表示する、addされているがcommitされていない変更(staged)があったとき"+"を表示する
-
-
-# ----------------------------------------------------------------------------------------
-# Python設定
-# ----------------------------------------------------------------------------------------
-# !! Contents within this block are managed by 'conda init' !!
-__conda_setup="$('/Users/yuya.fujita/opt/anaconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
-if [ $? -eq 0 ]; then
-    eval "$__conda_setup"
-else
-    if [ -f "/Users/yuya.fujita/opt/anaconda3/etc/profile.d/conda.sh" ]; then
-        . "/Users/yuya.fujita/opt/anaconda3/etc/profile.d/conda.sh"
-    else
-        export PATH="/Users/yuya.fujita/opt/anaconda3/bin:$PATH"
-    fi
-fi
-unset __conda_setup
-
 
 # ----------------------------------------------------------------------------------------
 # alias設定
 # ----------------------------------------------------------------------------------------
 alias ll="ls -laF"
-alias v="/usr/local/bin/vim"   # vim
+alias v="/usr/local/bin/nvim"   # vim
 alias his="history -Di | grep" # 引数でhistoryのgrepを行う
 alias his="history -Di"
 alias gcl="gcloud" #gcloud CLI
@@ -106,14 +81,8 @@ fi
 autoload -U compinit
 compinit -u
 
-
 # Base
 alias rm='rm -i'
-alias v="/usr/bin/vim"
 alias gg='git grep'
 alias k='kubectl'
 alias d='docker'
-
-# C#
-alias dotnetnew='dotnet new console' # dotonet run
-eval "$(rbenv init -)"

@@ -21,6 +21,12 @@ $ cd ~/dotfiles
 ## Mac Font
 - Size: Ricty Regular 20
 
+## NeoVim
+```
+ln -sf ~/dotfiles/.vimrc ~/.config/nvim/init.vim
+ln -sf ~/dotfiles/colors ~/.config/nvim
+```
+
 ## Terminal
 - Setting tab shortcuts
   - システム環境設定→キーボード→ショートカット

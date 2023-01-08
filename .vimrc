@@ -292,7 +292,6 @@ set hidden     " 保存されていないファイルがあるときでも別の
 set autoread   " 外部でファイルに変更がされた場合は読みなおす
 set nobackup   " ファイル保存時にバックアップファイルを作らない
 set noswapfile " ファイル編集中にスワップファイルを作らない
-set clipboard=unnamed,autoselect
 
 " 検索/置換の設定
 set hlsearch   " 検索文字列をハイライトする
