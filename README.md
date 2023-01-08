@@ -25,10 +25,20 @@ $ cd ~/dotfiles
 ```
 ln -sf ~/dotfiles/.vimrc ~/.config/nvim/init.vim
 ln -sf ~/dotfiles/colors ~/.config/nvim
-ln -sf ~/dotfiles/.vim/dein.toml ~/.vim/dein.toml
 
 pip3 install --user pynvim
 pip3 install --user neovim
+```
+
+- vim-plug
+```
+:PlugInstall
+```
+
+- Color Scheme
+```
+mkdir ~/.config/nvim/color
+cp .vim/plugged/vim-colors-solarized/colors/solarized.vim ~/.config/nvim/color
 ```
 
 ## Terminal

@@ -67,7 +67,7 @@ compinit -u
 # alias設定
 # ----------------------------------------------------------------------------------------
 alias ll="ls -laF"
-alias v="/usr/local/bin/vim"
+alias v="/usr/local/bin/nvim"
 alias his="history -Di | grep" # 引数でhistoryのgrepを行う
 alias his="history -Di"
 alias gcl="gcloud" #gcloud CLI

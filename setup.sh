@@ -30,7 +30,7 @@ curl -o git-completion.bash https://raw.githubusercontent.com/git/git/master/con
 curl -o _git https://raw.githubusercontent.com/git/git/master/contrib/completion/git-completion.zsh
 
 # plug.vim
-curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
+curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs \
     https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 
 cd ~/

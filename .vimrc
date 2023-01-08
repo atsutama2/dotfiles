@@ -5,7 +5,7 @@
 "-------------------------------------------------------
 " vim-plug
 "-------------------------------------------------------
-call plug#begin('~/.vim/plugged')
+call plug#begin('~/.local/share/nvim/plugged')
   Plug 'vim-jp/vimdoc-ja'                 " 日本語に翻訳した Vim 付属のヘルプ
   Plug 'osyo-manga/vim-anzu'              " 検索時にマッチした個数とそれが何番目であるかの情報を表示
   Plug 'itchyny/lightline.vim'            " ステータスラインをリッチにする
@@ -16,90 +16,17 @@ call plug#begin('~/.vim/plugged')
 call plug#end()
 
 "-------------------------------------------------------
-" vim-lsp-settings 
+" vim-colors-solarized 
 "-------------------------------------------------------
-function! s:on_lsp_buffer_enabled() abort
-  setlocal omnifunc=lsp#complete
-  setlocal signcolumn=yes
-  nmap <buffer> gd <plug>(lsp-definition)
-  nmap <buffer> <C-]> <plug>(lsp-definition)
-  nmap <buffer> <f2> <plug>(lsp-rename)
-  nmap <buffer> <Leader>d <plug>(lsp-type-definition)
-  nmap <buffer> <Leader>r <plug>(lsp-references)
-  nmap <buffer> <Leader>i <plug>(lsp-implementation)
-  inoremap <expr> <cr> pumvisible() ? "\<c-y>\<cr>" : "\<cr>"
-endfunction
-
-augroup lsp_install
-  au!
-  autocmd User lsp_buffer_enabled call s:on_lsp_buffer_enabled()
-augroup END
-command! LspDebug let lsp_log_verbose=1 | let lsp_log_file = expand('~/lsp.log')
-
-let g:lsp_diagnostics_enabled = 1
-let g:lsp_diagnostics_echo_cursor = 1
-" let g:asyncomplete_auto_popup = 1
-" let g:asyncomplete_auto_completeopt = 0
-let g:asyncomplete_popup_delay = 200
-let g:lsp_text_edit_enabled = 1
-let g:lsp_preview_float = 1
-let g:lsp_diagnostics_float_cursor = 1
-let g:lsp_settings_filetype_go = ['gopls', 'golangci-lint-langserver']
-
-let g:lsp_settings = {}
-let g:lsp_settings['gopls'] = {
-  \  'workspace_config': {
-  \    'usePlaceholders': v:true,
-  \    'analyses': {
-  \      'fillstruct': v:true,
-  \    },
-  \  },
-  \  'initialization_options': {
-  \    'usePlaceholders': v:true,
-  \    'analyses': {
-  \      'fillstruct': v:true,
-  \    },
-  \  },
-  \}
-
-" For snippets
-let g:UltiSnipsExpandTrigger="<tab>"
-let g:UltiSnipsJumpForwardTrigger="<tab>"
-let g:UltiSnipsJumpBackwardTrigger="<s-tab>"
-
-set completeopt+=menuone
-
-"-------------------------------------------------------
-" vim-goimports 
-"-------------------------------------------------------
-let g:goimports_simplify = 1
-autocmd BufWritePre *.go call execute(['LspCodeActionSync source.organizeImports', 'LspDocumentFormatSync'])
-
-
-"-------------------------------------------------------
-" neocomplcache
-"-------------------------------------------------------
-let g:neocomplcache_enable_at_startup = 1
-
-
-"-------------------------------------------------------
-" neosnippet
-"-------------------------------------------------------
-imap <C-k> <Plug>(neosnippet_expand_or_jump)
-smap <C-k> <Plug>(neosnippet_expand_or_jump)
-xmap <C-k> <Plug>(neosnippet_expand_target)
-
-" Tell Neosnippet about the other snippets
-let g:neosnippet#snippets_directory='~/.vim/snippets/'
-
-imap <expr><TAB> neosnippet#expandable_or_jumpable() ? "\<Plug>(neosnippet_expand_or_jump)" : pumvisible() ? "\<C-n>" : "\<TAB>"
-smap <expr><TAB> neosnippet#expandable_or_jumpable() ? "\<Plug>(neosnippet_expand_or_jump)" : "\<TAB>"
+syntax enable
+set background=dark
+colorscheme solarized
 
 
 "-------------------------------------------------------
 " vim-indent-guides
 "-------------------------------------------------------
-colorscheme default
+"colorscheme default
 "vim立ち上げ時に自動的にvim-indent-guidesをオンにする。
 let g:indent_guides_enable_on_vim_startup = 0
 "autoで色付けするのはストップ
@@ -217,11 +144,18 @@ nmap <silent> <C-g><C-p> <Plug>GitGutterPrevHunk
 "-------------------------------------------------------
 filetype plugin indent on
 filetype indent on
-syntax on
 
 let g:neocomplete_php_locale = 'ja'
 let g:Powerline_symbols = 'fancy'
 let g:gitgutter_max_signs = 5000
+
+" copy & paste map
+nnoremap <Space>d "*dd
+vnoremap <Space>d "*dd
+nnoremap <Space>y "*yy
+vnoremap <Space>y "*yy
+nnoremap <Space>p "*p
+vnoremap <Space>p "*p
 
 au BufRead,BufNewFile *.scss set filetype=scss
 au BufRead,BufNewFile *.tpl set filetype=php
@@ -250,7 +184,7 @@ set showmatch      " 対応する括弧を強調表示
 set helpheight=999 " ヘルプを画面いっぱいに開く
 set nocursorline   " カーソル行を強調表示しない
 set ambiwidth=double " □や○文字が崩れる問題を解決
-set clipboard=unnamed
+set clipboard+=unnamedplus
 
 " カーソル移動関連の設定
 set backspace=indent,eol,start " Backspaceキーの影響範囲に制限を設けない
