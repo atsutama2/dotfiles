@@ -14,19 +14,12 @@ endif
 if dein#load_state(s:dein_dir)
   call dein#begin(s:dein_dir)
 
-  call dein#add('$HOME/.cache/dein/repos/github.com/Shougo/dein.vim') " プラグインマネージャー
-  call dein#add('Shougo/neocomplete')                                 " 補完プラグイン
-  call dein#add('Shougo/neosnippet.vim')                              " スニペット補完プラグイン 
-  call dein#add('Shougo/neosnippet-snippets')                         " 各種スニペット
-  call dein#add('itchyny/lightline.vim.git')                          " ステータスラインをリッチにする
-  call dein#add('airblade/vim-gitgutter')                             " 変更箇所を左端に表示する
-  call dein#add('altercation/vim-colors-solarized')                   " カラースキーム設定
-  call dein#add('osyo-manga/vim-anzu.git')                            " 検索時にマッチした個数とそれが何番目であるかの情報を表示
-  call dein#add('vim-scripts/yanktmp.vim')                            " 別プロセスのvim同士でコピーペースト
-  call dein#add('nathanaelkane/vim-indent-guides')                    " インデントを可視化
-  call dein#add('sheerun/vim-polyglot')                               " 各種プログラミング言語やファイル形式に対応
-  call dein#add('justmao945/vim-clang')                               " C++用補完
-  " call dein#add('')                                                 "
+  "call dein#add('$HOME/.cache/dein/repos/github.com/Shougo/dein.vim') " プラグインマネージャー
+  "call dein#add('Shougo/neocomplete')                                 " 補完プラグイン
+  "call dein#add('Shougo/neosnippet.vim')                              " スニペット補完プラグイン 
+  "call dein#add('Shougo/neosnippet-snippets')                         " 各種スニペット
+  "call dein#add('sheerun/vim-polyglot')                               " 各種プログラミング言語やファイル形式に対応
+  "call dein#add('justmao945/vim-clang')                               " C++用補完
 
   let s:rc_dir = expand('~/.vim')
   if !isdirectory(s:rc_dir)

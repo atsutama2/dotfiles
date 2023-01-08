@@ -1,0 +1,30 @@
+#[[plugins]]
+#repo = ''
+
+# 日本語に翻訳した Vim 付属のヘルプ
+[[plugins]]
+repo = 'vim-jp/vimdoc-ja'
+
+# 検索時にマッチした個数とそれが何番目であるかの情報を表示
+[[plugins]]
+repo = 'osyo-manga/vim-anzu.git'
+
+# ステータスラインをリッチにする
+[[plugins]]
+repo = 'itchyny/lightline.vim.git'
+
+# 別プロセスのvim同士でコピーペースト
+[[plugins]]
+repo = 'vim-scripts/yanktmp.vim'
+
+# 変更箇所を左端に表示する
+[[plugins]]
+repo = 'airblade/vim-gitgutter'
+
+# インデントを可視化
+[[plugins]]
+repo = 'nathanaelkane/vim-indent-guides'
+
+# カラースキーム設定
+[[plugins]]
+repo = 'altercation/vim-colors-solarized'
