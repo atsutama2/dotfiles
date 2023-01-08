@@ -83,8 +83,15 @@ alias k='kubectl'
 alias mk='minikube'
 [[ /usr/local/bin/kubectl ]] && source <(kubectl completion zsh)
 
-# Base
-alias rm='rm -i'
 alias gg='git grep'
 alias k='kubectl'
 alias d='docker'
+
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f "$HOME/google-cloud-sdk/path.zsh.inc" ]; then . "$HOME/google-cloud-sdk/path.zsh.inc"; fi
+
+# The next line enables shell command completion for gcloud.
+if [ -f "$HOME/google-cloud-sdk/completion.zsh.inc" ]; then . "$HOME/google-cloud-sdk/completion.zsh.inc"; fi
+
+#. /usr/local/opt/asdf/asdf.sh
+export PATH="/usr/local/opt/mysql@5.7/bin:$PATH"
