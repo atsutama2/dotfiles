@@ -44,6 +44,19 @@ anyenv install pyenv
 anyenv install nodenv
 ```
 
+- goenv
+```
+# install可能Version
+goenv install -l
+
+# install
+goenv install 1.18.0
+goenv global 1.18.0
+goenv rehash
+goenv versions
+which go
+```
+
 ### NeoVim
 ```
 ln -sf ~/dotfiles/.vimrc ~/.config/nvim/init.vim
