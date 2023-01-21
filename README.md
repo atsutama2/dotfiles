@@ -11,6 +11,11 @@ HomeBrew：https://brew.sh/index_ja
 xcode-select --install
 ```
 
+## Rosetta2のインストール
+```
+sudo softwareupdate --install-rosetta
+```
+
 ## Install
 Execute following commands:
 ```
