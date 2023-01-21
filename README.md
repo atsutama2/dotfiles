@@ -38,6 +38,7 @@ anyenv install --init
 anyenv install -l
 
 # example
+anyenv install goenv
 anyenv install rbenv
 anyenv install pyenv
 anyenv install nodenv
@@ -47,9 +48,6 @@ anyenv install nodenv
 ```
 ln -sf ~/dotfiles/.vimrc ~/.config/nvim/init.vim
 ln -sf ~/dotfiles/colors ~/.config/nvim
-
-pip3 install --user pynvim
-pip3 install --user neovim
 ```
 
 - vim-plug
