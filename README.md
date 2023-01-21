@@ -3,6 +3,8 @@ dotfiles for mac
 
 ## Preparation
 Execute following command for installing `homebrew`:<br>
+
+## HomeBrew
 HomeBrew：https://brew.sh/index_ja
 
 ```
