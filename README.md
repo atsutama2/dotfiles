@@ -1,6 +1,8 @@
 # dotfiles
 dotfiles for mac
 
+参考：　https://mykii.blog/m1-mac-setup/#i-4
+
 ## Preparation
 Execute following command for installing `homebrew`:<br>
 
