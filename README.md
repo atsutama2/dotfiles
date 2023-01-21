@@ -26,10 +26,21 @@ $ cd ~/dotfiles
 ./setup.sh
 ```
 
-## Mac Font
+### Mac Font
 - Size: Ricty Regular 20
 
-## NeoVim
+### anyenv
+```
+# プラグインをインストールする
+anyenv install --init
+
+# install list
+anyenv install rbenv
+anyenv install pyenv
+anyenv install nodenv
+```
+
+### NeoVim
 ```
 ln -sf ~/dotfiles/.vimrc ~/.config/nvim/init.vim
 ln -sf ~/dotfiles/colors ~/.config/nvim
@@ -49,7 +60,7 @@ mkdir ~/.config/nvim/color
 cp .vim/plugged/vim-colors-solarized/colors/solarized.vim ~/.config/nvim/color
 ```
 
-## Terminal
+### Terminal
 - Setting tab shortcuts
   - システム環境設定→キーボード→ショートカット
   - アプリケーション→ターミナル.app
