@@ -35,6 +35,9 @@ $ cd ~/dotfiles
 anyenv install --init
 
 # install list
+anyenv install -l
+
+# example
 anyenv install rbenv
 anyenv install pyenv
 anyenv install nodenv
