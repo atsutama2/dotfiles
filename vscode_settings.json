@@ -22,30 +22,25 @@
             "editor.findMatchBorder": "#FDFF0C"
         }
     },
-    "team.showWelcomeMessage": false,
     "gitlens.keymap": "alternate",
     "git.autofetch": true,
     "workbench.statusBar.visible": true,
     "workbench.activityBar.visible": true,
-    "gitlens.historyExplorer.enabled": true,
-    "csharp.format.enable": false,
     "breadcrumbs.enabled": true,
-    "gitlens.views.fileHistory.enabled": true,
     "gitlens.views.lineHistory.enabled": true,
-    "vsnotes.defaultNotePath": "/Users/yuya.fujita/proj",
     "workbench.sideBar.location": "left",
-    "python.pythonPath": "/Users/yuya.fujita/.pyenv/shims/python",
-    "editor.suggestSelection": "first",
-    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
     "editor.largeFileOptimizations": false,
-    "workbench.colorTheme": "Atom One Dark",
     "go.formatTool": "goimports",
-    "code-runner.clearPreviousOutput": true,
-    "code-runner.runInTerminal": true,
     "editor.renderWhitespace": "none",
     "terminal.integrated.inheritEnv": true,
     "debug.onTaskErrors": "debugAnyway",
-    "omnisharp.disableMSBuildDiagnosticWarning": true,
-    "omnisharp.useGlobalMono": "always",
-    "omnisharp.monoPath": "/usr/local/Cellar/mono/6.12.0.122"
+    "tabnine.experimentalAutoImports": true,
+    "go.languageServerExperimentalFeatures": {
+        "format": true,
+        "diagnostics": true,
+        "documentLink": true
+    },
+    "go.goroot": "$HOME/.anyenv/envs/goenv/versions/1.18.0",
+    "workbench.startupEditor": "none",
+    "workbench.colorTheme": "Atom One Dark"
 }
