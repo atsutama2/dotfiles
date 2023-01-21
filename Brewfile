@@ -1,4 +1,4 @@
-brew "nvim"
+brew "neovim"
 brew "wget"
 brew "tcl-tk"
 brew "clang-format"
