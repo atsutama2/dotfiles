@@ -41,7 +41,7 @@ anyenv install pyenv
 anyenv install nodenv
 ```
 
-- goenv
+### goenv
 ```
 # install可能Version
 goenv install -l
@@ -54,18 +54,38 @@ goenv versions
 which go
 ```
 
+### nodenv
+```
+# install
+anyenv install nodenv
+
+# Version 確認
+nodenv -v
+```
+
+### Node.js
+```
+# インストール可能なnodeのバージョンを表示
+nodenv install -l
+
+# example
+nodenv rehash
+nodenv global 16.15.0
+node -v
+```
+
 ### NeoVim
 ```
 ln -sf ~/dotfiles/.vimrc ~/.config/nvim/init.vim
 ln -sf ~/dotfiles/colors ~/.config/nvim
 ```
 
-- vim-plug
+### vim-plug
 ```
 :PlugInstall
 ```
 
-- Color Scheme
+### Color Scheme
 ```
 mkdir ~/.config/nvim/color
 cp .vim/plugged/vim-colors-solarized/colors/solarized.vim ~/.config/nvim/color
