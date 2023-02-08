@@ -109,6 +109,16 @@ cp .vim/plugged/vim-colors-solarized/colors/solarized.vim ~/.config/nvim/color
     - ctrl + ]
   - 前に戻る
     - ctrl + [
+
+- Go Test Setting for Env
+  - Example
+```
+    "go.testEnvVars": {
+        "PROJECT_ID": "local",
+        "ENV": "local",
+        "RUN_ENV": "local",
+    }
+```
     
 ## Mac トラックパッドで「3 本指のドラッグ」を有効にする
 - Apple メニュー  >「システム設定」(または「システム環境設定」) の順に選択します。
