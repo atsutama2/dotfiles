@@ -125,6 +125,9 @@ cp .vim/plugged/vim-colors-solarized/colors/solarized.vim ~/.config/nvim/color
 - 「アクセシビリティ」をクリックします。
 - 「ポインタコントロール」(または「マウスとトラックパッド」) をクリックします。
 - 「トラックパッドオプション」ボタンをクリックします。
+
+## LGTM
+- https://chromewebstore.google.com/detail/easy-lgtm/pbbaemjnonobaiglegdfamlbmngkjdeg?hl=ja
 - 「ドラッグにトラックパッドを使用」(または「ドラッグを有効にする」) をオンにします。
 - ポップアップメニューからドラッグ方法として「3 本指のドラッグ」を選択します。
 - 「OK」をクリックします。
