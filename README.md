@@ -129,5 +129,5 @@ cp .vim/plugged/vim-colors-solarized/colors/solarized.vim ~/.config/nvim/color
 - ポップアップメニューからドラッグ方法として「3 本指のドラッグ」を選択します。
 - 「OK」をクリックします。
 
-## LGTM
+## LGTM For Chrome拡張
 - https://chromewebstore.google.com/detail/easy-lgtm/pbbaemjnonobaiglegdfamlbmngkjdeg?hl=ja
