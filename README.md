@@ -74,12 +74,6 @@ nodenv global 16.15.0
 node -v
 ```
 
-### NeoVim
-```
-ln -sf ~/dotfiles/.vimrc ~/.config/nvim/init.vim
-ln -sf ~/dotfiles/colors ~/.config/nvim
-```
-
 ### vim-plug
 ```
 :PlugInstall
