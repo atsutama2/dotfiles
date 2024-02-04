@@ -24,7 +24,7 @@ $ cd ~/dotfiles
 ```
 
 ### Mac Font
-- Size: Ricty Regular 20
+- Size: [HackGen](https://github.com/yuru7/HackGen)
 
 ### anyenv
 ```
