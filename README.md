@@ -125,3 +125,6 @@ cp .vim/plugged/vim-colors-solarized/colors/solarized.vim ~/.config/nvim/color
 
 ## LGTM For Chrome拡張
 - https://chromewebstore.google.com/detail/easy-lgtm/pbbaemjnonobaiglegdfamlbmngkjdeg?hl=ja
+
+## Redis
+https://github.com/luin/medis
