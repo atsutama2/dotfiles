@@ -127,4 +127,4 @@ cp .vim/plugged/vim-colors-solarized/colors/solarized.vim ~/.config/nvim/color
 - https://chromewebstore.google.com/detail/easy-lgtm/pbbaemjnonobaiglegdfamlbmngkjdeg?hl=ja
 
 ## Redis
-https://github.com/luin/medis
+- https://github.com/luin/medis
