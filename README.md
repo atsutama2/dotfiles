@@ -91,6 +91,9 @@ cp .vim/plugged/vim-colors-solarized/colors/solarized.vim ~/.config/nvim/color
   - アプリケーション→ターミナル.app
   - 次のタブを表示： command + 右Key
   - 前のタブを表示： command + 左Key
+ 
+## CotEditer
+https://coteditor.com/
 
 ## VSCode
 - Setting file
