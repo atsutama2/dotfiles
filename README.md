@@ -2,8 +2,8 @@
 dotfiles for mac
 
 参考
-https://mykii.blog/m1-mac-setup/#i-4
-https://qiita.com/P90L/items/ad2248fa6cf3bdc68195
+- https://mykii.blog/m1-mac-setup/#i-4
+- https://qiita.com/P90L/items/ad2248fa6cf3bdc68195
 
 ```
 // Finderのフルパス表示
