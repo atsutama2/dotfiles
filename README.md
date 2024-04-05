@@ -4,6 +4,8 @@ dotfiles for mac
 参考
 - https://mykii.blog/m1-mac-setup/#i-4
 - https://qiita.com/P90L/items/ad2248fa6cf3bdc68195
+- https://zenn.dev/kyome/articles/ff5641b5453e6b
+- https://zenn.dev/gingertoffee/scraps/0ea30a352ce739
 
 ```
 // Finderのフルパス表示
