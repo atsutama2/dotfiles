@@ -3,6 +3,14 @@ dotfiles for mac
 
 参考：https://mykii.blog/m1-mac-setup/#i-4
 
+```
+// Finderのフルパス表示
+defaults write com.apple.finder _FXShowPosixPathInTitle -boolean true
+
+// 隠しファイル表示
+defaults write com.apple.finder AppleShowAllFiles TRUE
+```
+
 ## Preparation Initial Setting
 Execute following command for installing `homebrew`: https://brew.sh/index_ja
 
