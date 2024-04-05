@@ -41,6 +41,8 @@ $ cd ~/dotfiles
 # プラグインをインストールする
 anyenv install --init
 
+echo 'eval "$(anyenv init -)"' >> ~/.zshrc
+
 # install list
 anyenv install -l
 
